@@ -35,8 +35,7 @@ rel_plot <- ggplot(myh_rel, aes (x = Genotype, y = FC, fill = Genotype)) +
            width = 0.8) +
   #group data into facets for the different genes 
   facet_grid(~Genes) +
-  #scale_fill_manual(values = blue_palette) +
-  #Add meant point and error bars using stat summary
+  #Add mean point and error bars using stat summary
    stat_summary(fun.y = mean,
                geom = "point",
                size = 2,
